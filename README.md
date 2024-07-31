@@ -73,3 +73,7 @@ traitlets==4.0.0
 ![Screenshot from 2024-07-31 10-47-51](https://github.com/user-attachments/assets/823b8171-aa9e-4424-b8c9-7146be3bc854)
 Once a pyenv is created you can proceed.
 
+You can exceute the hotplanner in the hotspot tool using the following command
+```
+../hotfloorplan -c hotspot.config -f floorplan_9999.desc -p power_9999.p -o output.flp
+```
