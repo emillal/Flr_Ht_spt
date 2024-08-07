@@ -73,7 +73,20 @@ traitlets==4.0.0
 ![Screenshot from 2024-07-31 10-47-51](https://github.com/user-attachments/assets/823b8171-aa9e-4424-b8c9-7146be3bc854)
 Once a pyenv is created you can proceed.
 
-You can exceute the hotplanner in the hotspot tool using the following command
+
+You can exceute the hotplanner in the hotspot tool using the following command:
 ```
 ../hotfloorplan -c hotspot.config -f floorplan_9999.desc -p power_9999.p -o output.flp
 ```
+
+
+Use the following command to do the HotSpot tool for thermal analysis :
+```
+../hotspot -c hotspot.config -f output.flp -p power_9999.ptrace -model_type block -steady_file outputs/output.steady -o outputs/output.ttrace
+
+```
+
+
+
+We require the .flp (floorplan) and a .ptrace file aswell.<br />
+![Screenshot from 2024-08-07 15-19-22](https://github.com/user-attachments/assets/1ccb4854-2fe4-41f9-88a1-db771b963636)
