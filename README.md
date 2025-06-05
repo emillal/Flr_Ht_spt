@@ -1,6 +1,23 @@
 # Flr_Ht_spt
 Thermal Hotspot Detection using ML
 
+The increasing complexity of Very Large Scale Integration (VLSI) circuits requires innovative ap-
+proaches to traditional design processes. This project explores the use of machine learning (ML)
+techniques in the floorplanning stage of VLSI physical design, focusing on automatic placement and
+thermal hotspot mitigation. We develop a dataset generation framework to simulate floorplans and
+design an ML model to predict optimal module placements. The results demonstrate the potential
+of ML to enhance design efficiency and quality while reducing manual intervention.
+In Physical design floorplaning is a crucial part of the flow. There are several factors in floor-
+planing which can help or degrade the congestion, power thermal hotspots etc.. Varying from IO
+pin placements, placement and routing blockages and most importantly macro placements. Placing
+the macros is a very tedious and time taking procedure. The designer will have to experiment with
+lots of different kinds of macro placements to get the best recipe to obtain high convergence. The
+data set is very crucial in this project. I have written a python script which creates different images
+various macro placements. We will be training the model with these images. Ideally the trained
+model is expected to get the best case of macro placement for a floorplan design. The dataset is
+saved as a .h5 file and is used to train the a CNN model. The training and validation accuracy is
+observed. Further a tflite conversion is made and a comparison is also made for the same.
+
 
 ## Step 1 : Creating Pyenv
 
